@@ -192,8 +192,9 @@ a.hover_text {
 /*******************************************/
 
 .capes {
-	background-image: url('images/cape_icons.png');
-	background: white;
+	background-image: url('../images/cape_icons.png');
+	background-image: no-repeat;
+	background-color: white;
 	height: 300px;
 }
 
