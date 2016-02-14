@@ -62,13 +62,29 @@ h1, h2, p, ul {
 }
 
 h3 {
-	float: left;
 	margin-left: 200px;
-	position: relative;
-	z-index: 20;
-	background-color: #202020;
+	display: block;
 }
 
+header {
+	position: relative;
+	z-index: 20;
+	width: 100%;
+	display: inline-block;
+}
+
+#tag {
+	margin-left: 600px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.positioning_statement {
+	float: left;
+	position: relative;
+	z-index: 40;
+	margin-left: 240px;
+}
 
 a.button {
 	display: inline-block;
@@ -91,11 +107,11 @@ header {
 	padding-right: 40px;
 }*/
 
-#tag {
+/*#tag {
 	display: inline-block;
 	padding-left: 40px;
 	float: left;
-}
+}*/
 
 .hamburger {
 	width: 60px;
@@ -172,8 +188,42 @@ a.hover_text {
 
 
 /******************************************
-/* PAGES
+/* Flexboxes Portfolio Page
 /*******************************************/
+
+.capes {
+	background-image: url('images/cape_icons.png');
+	background: white;
+	height: 300px;
+}
+
+.container_2 {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+}
+
+.msi {
+	background-color: orange;
+	border-color: gray;
+	color: gray;
+	flex: 1;
+}
+
+.keiser {
+	background-color: yellow;
+	border-color: gray;
+	color: gray;
+	flex: 1;
+}
+
+.dio {
+	background-color: gray;
+	border-color: gray;
+	color: gray;
+	flex: 1;
+}
+
 
 /******************************************
 /* SECTIONS
@@ -208,9 +258,9 @@ h4 {
 	letter-spacing: 2px;
 }
 
-p {
+#tag {
 	font-weight: 5;
-	font-size: 15px;
+	font-size: 20px;
 	letter-spacing: 2px;
 }
 
@@ -220,6 +270,27 @@ p {
 
 #tag, nav a {
 	color: #202020;
+}
+
+.positioning_statement {
+	height: 300px;
+	width: 800px;
+	border-color: black;
+	border: 1px;
+	background-color: pink;	
+}
+
+.positioning_statement p {
+	width: 100%;
+	height: 100%;
+	margin-top: 10%;
+	margin-bottom: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: gray;
+	font-family: 'Lora';
+	font-size: 20px;
+	line-height: 1.75;
 }
 
 .button-container {
@@ -307,6 +378,11 @@ nav .portfolio {
 	font-size: 1em;
 	padding: 0;
 	margin-top: 0px;
+}
+
+.nav_pop {
+	z-index: 1000;
+	position: absolute;
 }
 
 nav li a{
