@@ -225,9 +225,7 @@ a.hover_text {
 .keiser, .dio, .msi {
 	color: gray;
 	margin: 0;
-
 }
-
 
 .overlay p {
   text-align: center;
@@ -454,6 +452,11 @@ a{
 	line-height: 1;
 }
 
+.bottom_bank img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
 
 .about_container {
 	position: relative;
@@ -465,7 +468,6 @@ a{
 }
 
 .slideshow {
-/*  float: right;*/
   position: absolute;
   width: 300px;
   height: 300px;
