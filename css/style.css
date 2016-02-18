@@ -36,16 +36,6 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-/*.bg-image {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	background: #E75A32;
-	background-size: cover;
-	z-index: -10;
-}*/
-
 
 #wrapper {
 	width: 50%;
@@ -227,9 +217,10 @@ a.hover_text {
 	margin: 0;
 }
 
+
 .overlay p {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0;
   line-height: 257px;
   color: white;
@@ -580,9 +571,24 @@ h4 {
 	padding-top: 25%;
 }
 
+#mainArea {
+	display: inline-block;
+}
+
+
 #mainArea h4 {
 	padding-top: 5%;
+	margin: 0;
 	color: #666;
+}
+
+#column2 p {
+	line-height: 1.5;
+	font-size: 20px;
+	margin: 0px;
+	color: #666;
+	font-family: 'Lora';
+
 }
 
 .resume_top_box {
