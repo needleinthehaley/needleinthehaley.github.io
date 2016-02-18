@@ -208,53 +208,33 @@ a.hover_text {
 .capes {
 	background-image: url('../images/cape_icons.png');
 	background-color: white;
-	background-image: no-repeat;
 	height: 300px;
 }
 
-.main_wrap {
+.flex_container {
 	padding-left: 14%;
-}
-/*
-.container_1 {
-	margin-top: 50px;
-}*/
-
-.container_2 {
 	display: flex;
-	min-height: 100vh;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	min-height: 100vh;
 }
 
-.one-third {
+.cols_3 > .one-third {
 	flex-basis: 33.333333333%;
 	max-width: 33.333333333%;
 }
 
-.msi {
-	color: gray;
-	flex: 1;
-	margin: 0;
-
-}
-
 .dio img, .keiser img, .msi img {
-	width: 100%;
-	height: 100%;
+	background-image: cover;
 }
 
-.keiser {
+.keiser, .dio, .msi {
 	color: gray;
-	flex: 2;
 	margin: 0;
 
 }
 
-.dio {
-	color: gray;
-	flex: 3;
-	margin: 0;
-}
 
 .overlay p {
   text-align: center;
@@ -289,8 +269,16 @@ a.hover_text {
 /* Portfolio Page
 /*******************************************/
 
-.dio_image img {
-	padding-left: ;
+.dio_cont img {
+	width: 86%;
+	height: 500px;
+	margin-left: 14%;
+	position: relative;
+}
+
+h4 {
+	position: absolute;
+	display: inline;
 }
 
 /******************************************
