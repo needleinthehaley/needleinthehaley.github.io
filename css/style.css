@@ -64,7 +64,7 @@ h1, h2, p, ul {
 
 .logo_tag h3 {
 	position: absolute;
-	margin-left: 200px;
+	margin-left: 12%;
 
 }
 
@@ -86,10 +86,9 @@ header {
 	float: left;
 	padding-left: 14%;
 	position: relative;
-	
 	min-height: 300px;
 	max-width: 900px;
-	background-color: pink;	
+	background-color: #FFBAD2;	
 	box-shadow: 0 6px 8px 0 rgba(0, 0, 10px, 0.2), 2px 6px 20px 10px rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 
@@ -100,7 +99,7 @@ header {
 	width: 100%;
 	margin-top: 9%;
 	margin-bottom: 0;
-	padding-right: 5%;
+	padding-right: 2%;
 	padding-left: 0%;
 	padding-bottom: 0px;
 	color: #666;
@@ -115,7 +114,7 @@ header {
   right: 0;
   content: '';
   position: absolute;
-  background: pink;
+  background: #FFBAD2;
   height: 300px;
   width: 40px;
   box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 0px 0 rgba(0, 0, 0, 0.19);
@@ -157,13 +156,6 @@ a.button {
 .container li:first-of-type {
 	margin-left: 4%;
 
-}
-
-
-footer {
-	width: 100%;
-	margin-top: 20px;
-	height: 100px;
 }
 
 #social li {
@@ -217,8 +209,8 @@ a.hover_text {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	min-height: 100vh;
-}
+/*	min-height: 100vh;
+*/}
 
 .cols_3 > .one-third {
 	flex-basis: 33.333333333%;
@@ -266,22 +258,6 @@ a.hover_text {
 }
 
 /******************************************
-/* Portfolio Page
-/*******************************************/
-
-.dio_cont img {
-	width: 86%;
-	height: 500px;
-	margin-left: 14%;
-	position: relative;
-}
-
-h4 {
-	position: absolute;
-	display: inline;
-}
-
-/******************************************
 /* SECTIONS
 /*******************************************/
 h1, h2, h3, p, #social {
@@ -307,22 +283,11 @@ h3 {
 	letter-spacing: 2px;
 }
 
-h4 {
-	color: #F2DEE6;
-	font-weight: 100;
-	font-size: 30px;
-	letter-spacing: 2px;
-}
-
 #tag {
 	font-weight: 5;
 	font-size: 20px;
 	letter-spacing: 2px;
 }
-
-/*nav a {
-	text-decoration: none;
-}*/
 
 #tag, nav a {
 	color: #666;
@@ -351,20 +316,16 @@ a.button:hover {
   color: #ae9c96;
 }
 
-/*nav a:hover {
-	color: #f9f1b5;
-}*/
-
 ul {
 	list-style-type: none;
 }
 
 
-.hamburger li {
+/*.hamburger li {
 	height: 4px;
 	width: 80%;
 	margin: 6px auto;
-}
+}*/
 
 /******************************************
 /* SMALLER SCREENS
@@ -438,12 +399,12 @@ nav .portfolio li a{
 nav .sub_portfolio li a{ background: white; color: #E75A32;}
 
 nav .portfolio a:hover{ background: #E75A32;}
-nav .sub_portfolio a:hover{ background: #999;}
+nav .sub_portfolio a:hover{ background: #666;}
 
 ul.portfolio > li:hover > ul.sub_portfolio{ 
   display: block; 
   position: absolute;
-  left: 150px; top: 0;
+  left: 145px; top: 0;
 }
 
 ul.portfolio > li{ position: relative; }
@@ -464,8 +425,46 @@ a{
   text-decoration: none;
 }
 
+.top_left_box {
+	float: left;
+	padding-left: 14%;
+	position: absolute;
+	min-height: 300px;
+	max-width: 900px;
+	background-color: #F4C2C2;	
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 10px, 0.2), 2px 6px 20px 10px rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+
+.top_right_box p {
+	line-height: 1.5;
+	font-size: 20px;
+	margin: 0px;
+	color: #666;
+	font-family: 'Lora';
+	padding-left: 37%;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+}
+
+.top_right_box p ::first-letter {
+	font-size: 60px;
+	line-height: 1;
+}
+
+
+.about_container {
+	position: relative;
+}
+
+.top_right_box {
+	background-color: #FFBAD2;
+	height: 299px;
+}
+
 .slideshow {
-  float: right;
+/*  float: right;*/
   position: absolute;
   width: 300px;
   height: 300px;
@@ -504,7 +503,7 @@ a{
   opacity: 0.4;
 }
 
-.active{
+.active {
   opacity: 1;
 }
 
@@ -521,7 +520,6 @@ a{
 	float: right;
 	position: absolute;
 	margin-left:35%;
-	margin-top: 17%;
 	width: 700px;
 	background-color: #F2DEE6;
 	padding: 40px;
@@ -531,21 +529,7 @@ a{
 
 }
 
-.about p {
-	line-height: 1.5;
-	font-size: 20px;
-}
 
-.about p::first-letter {
-	font-size: 60px;
-	line-height: 1;
-}
-
-.about p {
-	color: gray;
-	font-family: 'Lora';
-
-}
 
 /******************************************
 /* Experience
@@ -559,21 +543,22 @@ a{
 	margin-right: 200px;
 }
 
-.sectionTitle h4 {
-	margin-left: 150px;
-}
 
 .sectionContent {
-	margin-left: 150px;
+	margin-left: 16%;
 	margin-right: 150px;
 }
 
-.sectionTitle h4 {
+h4 {
+	margin-left: 14%;
+	margin-top: 0px;
 	font-size: 25px;
+	letter-spacing: 2px;
+	color: #F2DEE6;
+	font-weight: 100;	
+	padding-top: 7%;
 }
 
-.sectionContent article {
-}
 
 
 
